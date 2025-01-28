@@ -1,18 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
-	<meta charset="UTF-8">
-	<!-- 1. Thay đổi tiêu đề -->
-	<title>Lời chúc!</title>
-	<link rel="shortcut icon" href="https://i.pinimg.com/564x/dd/73/9d/dd739d144d2a921ed3a67e14cd053ba3.jpg" type="image/x-icon"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css?family=Dancing+Script:700" rel="stylesheet">
-	<link rel="stylesheet" href="2.css">
-	<link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
-	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-</head>
+    <meta charset="UTF-8">
+    <title>Tâm thư gửi em !</title>
+    <link rel="icon" type="image/x-icon" href="https://i.pinimg.com/736x/ca/92/11/ca9211760f3d86fb5726f5eefe59ab76.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    
+    <!-- Font Google -->
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">    
+    <!-- CSS -->
+    <link rel="stylesheet" href="2.css">
+
+          
+    <audio id="backgroundAudio" loop>
+        <source src="./music/y2mate.com - 高睿  獨到 Normal No More中文版 我只想要自我的獨到 我不想要卑微的落逃動態歌詞PinyinLyrics.mp3" type="audio/mpeg">
+      </audio>
+      
+      <button id="toggleButton">
+        <i id="icon" class="fas fa-volume-mute"></i>
+      </button>
+      <script>
+        var audio = document.getElementById("backgroundAudio");
+        var button = document.getElementById("toggleButton");
+        var icon = document.getElementById("icon");
+      
+        button.addEventListener("click", function () {
+          if (audio.paused) {
+            audio.play();
+            icon.classList.remove("fa-volume-mute");
+            icon.classList.add("fa-volume-up");
+          } else {
+            audio.pause();
+            icon.classList.remove("fa-volume-up");
+            icon.classList.add("fa-volume-mute");
+          }
+        });
+      </script>
 <body>
 	<div class="container mt-4 layer">
 		<div class="row">
