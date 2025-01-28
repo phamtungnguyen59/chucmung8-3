@@ -41,3 +41,19 @@ span {
 	top: 0;
 	left: 0;
 }
+#toggleButton {
+    background-color: transparent;
+    border: none;
+    font-size: 32px;
+    cursor: pointer;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+#toggleButton:hover {
+    color: #ff0040; /* Đổi màu khi hover */
+}
+
+#toggleButton .fas {
+    animation: none;
+}
